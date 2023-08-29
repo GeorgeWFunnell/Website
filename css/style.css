@@ -1,0 +1,193 @@
+html {
+	font-size: 10px;
+}
+
+@media only screen and (max-width:1024px) {
+	html {
+		font-size: 9.411764705882353px;
+	}  
+}
+@media only screen and (max-width:768px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width:400px) {
+	html {
+		font-size: 9.411764705882353px;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+body {
+	background: #151515;
+	font-family: 'Roboto-Light', sans-serif   ;
+	font-size: 1.7rem;
+	line-height: 3rem;
+	color: #ffffff;
+   margin: 0;
+   padding: 0;
+
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+section{
+   position: relative;
+}
+
+.devider {
+	width: 100%;
+	height: 23px;
+	background: url('../Images/devider.png') no-repeat center center;
+	margin: 5px 0 10px;
+}
+
+/* navbar stuff */
+
+a:visited{
+   color: #ffffff;
+}
+
+a:hover{
+   color: #fff;
+}
+
+.navbartext{
+   display: inline-block;
+   padding: 0.2%;
+   font-family: "Lato", Helvetica, Arial, sans-serif;
+   text-decoration: none;
+   left: 100px;
+}
+
+ul {
+   list-style-type: none;
+}
+
+.navbar-nav > li > a {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+li{
+   display:inline;
+}
+
+.navbar {
+   position: fixed;
+   top: 0;
+   width: 100%;
+	transition: all 0.2s ease-in-out;
+   background-color: transparent;
+   z-index: 1;
+   color: #000000;
+   height: 8%;
+}
+.navbar .container {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.navbar-brand{
+   position: inherit;
+   z-index: 2;
+   background-image: url(../Images/GeorgeLogo_White.png);
+   height: 10%;
+   width: 10%;
+}
+
+/* end of nav bar stuff*/
+
+
+#intro {
+	width: 100%;
+	height: 100%;
+	display: table;
+	position: relative;
+	text-align: center;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+}
+
+.title {
+   z-index: 0;
+   position: relative;
+   background: #ffffff;
+   font-family: 'Gilroy-Bold', sans-serif;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   display: inline-block;
+   font-size: 10.5rem;
+   justify-content: center;
+   line-height: 60vh;
+}
+
+.underTitle{
+   color: #f4da8b;
+   font-size: 4.5rem;
+   font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.midSymbol{
+
+}
+
+.row {
+   z-index: 0;
+   position: relative;
+}
+
+
+@keyframes move-twinkle-back{
+   from {background-position: 0 0;}
+   to {background-position: -10000px 5000px;}
+}
+
+.stars,.twinkling {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100vh;
+   box-sizing: border-box;
+}
+
+.stars{
+   background: #000 url(../Images/stars.png) repeat top center;
+   z-index: -2;
+}
+
+.twinkling{
+   background:transparent url(../Images/twinkling.png) repeat top center;
+   z-index: -1;
+   animation: move-twinkle-back 200s linear infinite;
+}
+
+
+/* about section */
+#about{
+   display: flex;
+   background-color: #a9a9a9;
+   color: #000000;
+   padding: 0;
+   margin: 0;
+   overflow: auto;
+   padding: 1rem;
+   justify-content: center;
+   text-align: center;
+}
+
+.aboutTitle{
+   font-size: 4rem;
+
+}
+
+/* end of about section */
