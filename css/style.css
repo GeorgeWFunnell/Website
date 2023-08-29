@@ -1,21 +1,19 @@
 html {
 	font-size: 10px;
 }
-
-@media only screen and (max-width:1024px) {
-	html {
-		font-size: 9.411764705882353px;
-	}  
-}
+   
 @media only screen and (max-width:768px) {
 	html {
 		font-size: 10px;
 	}
+   .title{
+      font: 7.5rem;
+   }
 }
 @media only screen and (max-width:400px) {
-	html {
-		font-size: 9.411764705882353px;
-	}
+   .title{
+      font: 7.5rem;
+   }
 }
 
 html, body {
@@ -49,8 +47,12 @@ section{
 
 /* navbar stuff */
 
+a{
+   color: #f4da8b;
+}
+
 a:visited{
-   color: #ffffff;
+   color: #f4da8b;
 }
 
 a:hover{
@@ -63,6 +65,7 @@ a:hover{
    font-family: "Lato", Helvetica, Arial, sans-serif;
    text-decoration: none;
    left: 100px;
+   font-size: 2.5rem;
 }
 
 ul {
@@ -87,6 +90,7 @@ li{
    z-index: 1;
    color: #000000;
    height: 8vh;
+   margin-top: 2vh;
 }
 .navbar > * {
    display: inline-block;
@@ -151,6 +155,8 @@ li{
 .row {
    z-index: 0;
    position: relative;
+   margin-top: 10vh;
+   font-size: 2rem;
 }
 
 
@@ -181,9 +187,6 @@ li{
    animation: move-twinkle-back 200s linear infinite;
 }
 
-.row{
-
-}
 
 /* about section */
 #about{
@@ -201,6 +204,11 @@ li{
 .aboutTitle{
    font-size: 4rem;
 
+}
+
+.profilePic{
+   height: 400px;
+   width: 300px
 }
 
 /* end of about section */
