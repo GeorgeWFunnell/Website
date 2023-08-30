@@ -203,7 +203,6 @@ li{
 
 .aboutTitle{
    font-size: 4rem;
-
 }
 
 .profilePic{
@@ -221,14 +220,31 @@ li{
    color: #ffffff;
    padding: 0;
    margin: 0;
-   overflow: auto;
    padding: 1rem;
    justify-content: center;
    text-align: center;
+   display: block;
 }
 
 .projectHeading {
    
 }
 
+.memoryGameGif{
+   height: 40vh;
+}
+
 /* end of project section */
+
+
+/* contact section */
+
+#contact{
+   text-align: center;
+}
+
+.contactEmail{
+   text-align: center;
+}
+
+/* end of contact section */
